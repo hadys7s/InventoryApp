@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <TextView
+        android:id="@+id/Tproductname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Product-name"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_product_name"
+        app:layout_constraintEnd_toStartOf="@+id/edit_product_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_product_name"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/Tproductprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Product-price"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_product_price"
+        app:layout_constraintEnd_toStartOf="@+id/edit_product_price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_product_price"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/Tproductquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Quantity"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_product_quantity"
+        app:layout_constraintEnd_toStartOf="@+id/edit_product_quantity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_product_quantity"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <TextView
+        android:id="@+id/Tproductdescreption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Descerption"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_product_descrption"
+        app:layout_constraintEnd_toStartOf="@+id/edit_product_descrption"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_product_descrption"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <EditText
+        android:id="@+id/edit_product_name"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_product_price"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edit_product_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_product_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_product_name" />
+
+    <EditText
+        android:id="@+id/edit_product_quantity"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edit_product_price"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_product_price"
+        app:layout_constraintTop_toBottomOf="@+id/edit_product_price" />
+
+    <EditText
+        android:id="@+id/edit_product_descrption"
+        android:layout_width="232dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:shadowColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/edit_product_quantity"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/edit_product_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/edit_product_quantity" />
+
+    <TextView
+        android:id="@+id/Tproduct_image"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Product-Image"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <Button
+        android:id="@+id/uplod_image"
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circle"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Tproduct_image"
+        app:layout_constraintTop_toBottomOf="@+id/Tproduct_image" />
+
+    <Button
+        android:id="@+id/Save_Product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/Producimageall"
+        android:layout_width="45dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+</android.support.constraint.ConstraintLayout>

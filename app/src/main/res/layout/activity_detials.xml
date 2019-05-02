@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detials">
+
+    <ImageView
+        android:id="@+id/Product_Image_Details"
+        android:layout_width="234dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/Product_Name_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Product-Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Image_Details" />
+
+    <TextView
+        android:id="@+id/Product_Price_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="20$"
+        android:textColor="#05FC24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Name_Details" />
+
+    <TextView
+        android:id="@+id/Product_Quantity_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="8dp"
+        android:text="quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Product_Nquantity_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="20"
+        android:textColor="#0CE2F1"
+        app:layout_constraintEnd_toEndOf="@+id/Product_Quantity_D"
+        app:layout_constraintStart_toStartOf="@+id/Product_Quantity_D"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Quantity_D" />
+
+    <Button
+        android:id="@+id/Product_minus_product_Details"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circlebutton"
+        android:text="-"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/Product_Nquantity_Details"
+        app:layout_constraintEnd_toStartOf="@+id/Product_Nquantity_Details"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Product_Nquantity_Details"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/Product_plus_Details"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/circlebutton"
+        android:text="+"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/Product_Nquantity_Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toEndOf="@+id/Product_Nquantity_Details"
+        app:layout_constraintTop_toTopOf="@+id/Product_Nquantity_Details"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/Product_Tdescription_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Image_Details" />
+
+    <TextView
+        android:id="@+id/Product_description_Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Try the new High quality of headphones live
+the experience "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Tdescription_Details" />
+
+    <Button
+        android:id="@+id/Product_Order_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle"
+        android:text="Order"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete All Products</string>
+    <string name="action_delete">Delete</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current pet [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete this Product?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current pet [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <string name="editor_activity_title_new_product">Add Product</string>
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current pet [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+    <string name="no_items">Not enough items</string>
+    <string name="editor_insert_product_failed">Error with saving product</string>
+    <string name="editor_insert_product_successful">Product saved</string>
+
+
+</resources>

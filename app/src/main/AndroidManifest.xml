@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.products">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon_01"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_icon_01"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Detials"
+        android:label="Product Details"
+        />
+        <activity
+            android:name=".AddProduct"
+            android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name="com.example.android.products.splash.splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.android.products.MainActivity"/>
+
+        <provider
+            android:name=".data.ProductProvider"
+            android:authorities="com.example.android.products"
+            android:exported="false" />
+    </application>
+
+</manifest>
